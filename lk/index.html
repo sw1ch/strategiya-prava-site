@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0908">
+<title>Личный кабинет — Стратегия Права</title>
+<meta name="description" content="Личный кабинет доверителя: этап дела, переписка с юристом и документы.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/css/app.css?v=98">
+<link rel="stylesheet" href="../assets/css/cabinet.css?v=98">
+</head>
+<body class="lk">
+<div class="grain" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+<defs>
+<linearGradient id="au" gradientUnits="userSpaceOnUse" x1="17" y1="9" x2="79" y2="87">
+<stop offset="0%" stop-color="#f4e3b0"/><stop offset="52%" stop-color="#e3be5a"/><stop offset="100%" stop-color="#c9a227"/>
+</linearGradient>
+<symbol id="i-clip" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5 12.3 19a4.6 4.6 0 0 1-6.5-6.5l7.9-7.9a3 3 0 0 1 4.3 4.3l-7.9 7.9a1.5 1.5 0 0 1-2.1-2.1l7.2-7.2"/></symbol>
+<symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z"/><path d="M14 3v5h5"/></symbol>
+<symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 20 4l-8 16-2-6-6-2Z"/></symbol>
+<symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14"/></symbol>
+<symbol id="i-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 4 12l7 7M4 12h16"/></symbol>
+<symbol id="i-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3M10 16l-4-4 4-4M6 12h11"/></symbol>
+<symbol id="i-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7.5A2 2 0 0 1 5 5.5h4l2 2.5h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1Z"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-5.2A8 8 0 1 1 21 12Z"/></symbol>
+<symbol id="i-people" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 19v-1.5a3.5 3.5 0 0 0-3.5-3.5h-5A3.5 3.5 0 0 0 4 17.5V19"/><circle cx="10" cy="8" r="3.2"/><path d="M20 19v-1.4a3.5 3.5 0 0 0-2.6-3.4"/><path d="M15.4 5.2a3.2 3.2 0 0 1 0 5.6"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><path d="M12 7.6V12l3 1.8"/></symbol>
+</defs>
+</svg>
+<section class="auth" id="auth" hidden>
+<div class="auth__top">
+<a class="brand" href="../index.html" aria-label="Стратегия Права — на сайт">
+<svg class="brand__mark" viewBox="0 0 96 96" fill="none" aria-hidden="true"><path d="M48 9 79 19.5V45c0 18-12.5 31.5-31 42C29.5 76.5 17 63 17 45V19.5Z" stroke="url(#au)" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/><g stroke="url(#au)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M30 38h36"/><path d="M48 38v26"/><path d="M39 64h18"/><path d="M30 38v6M66 38v6"/><path d="M22 44q8 8.5 16 0M58 44q8 8.5 16 0"/></g><circle cx="48" cy="38" r="3.4" fill="url(#au)"/></svg>
+<span class="brand__text"><span class="brand__name">Стратегия Права</span></span>
+</a>
+<a class="auth__back" href="../index.html">
+<svg width="16" height="16" aria-hidden="true"><use href="#i-back"/></svg>
+<span class="auth__back-label">Вернуться на сайт</span>
+</a>
+</div>
+<div class="auth__card">
+<svg class="auth__mark" viewBox="0 0 96 96" fill="none" aria-hidden="true"><path d="M48 9 79 19.5V45c0 18-12.5 31.5-31 42C29.5 76.5 17 63 17 45V19.5Z" stroke="url(#au)" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/><g stroke="url(#au)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M30 38h36"/><path d="M48 38v26"/><path d="M39 64h18"/><path d="M30 38v6M66 38v6"/><path d="M22 44q8 8.5 16 0M58 44q8 8.5 16 0"/></g><circle cx="48" cy="38" r="3.4" fill="url(#au)"/></svg>
+<h1 class="auth__title" id="auth-title">Личный кабинет</h1>
+<p class="auth__sub" id="auth-sub">Этап дела, переписка с юристом и документы</p>
+<div class="authtabs" role="tablist">
+<button type="button" role="tab" aria-selected="true" data-mode="login">Вход</button>
+<button type="button" role="tab" aria-selected="false" data-mode="signup">Регистрация</button>
+</div>
+<form id="login-form" novalidate>
+<div class="field">
+<label for="a-mail">Телефон, почта или логин</label>
+<input id="a-mail" type="text" autocomplete="username" inputmode="text"
+               placeholder="+7 (___) ___-__-__" required>
+<p class="field__error">Введите телефон, почту или логин, который выдал юрист.</p>
+</div>
+<div class="field">
+<label for="a-pass">Пароль</label>
+<input id="a-pass" type="password" autocomplete="current-password" placeholder="••••••••" required>
+<p class="field__error">Введите пароль.</p>
+</div>
+<label class="remember">
+<input type="checkbox" id="a-remember" checked>
+<span>Запомнить меня<em>Не отмечайте на чужом компьютере — выход произойдёт сам, как только вы закроете вкладку.</em></span>
+</label>
+<button class="btn btn--primary btn--block" type="submit" id="a-submit">Войти</button>
+<p class="form__status" id="a-status" role="status" aria-live="polite"></p>
+</form>
+<form id="signup-form" novalidate hidden>
+<p class="segbar__label" id="segbar-label">Кто заводит кабинет</p>
+<div class="segbar" role="radiogroup" aria-labelledby="segbar-label">
+<label class="segbar__opt">
+<input type="radio" name="s-entity" value="person" checked>
+<span>Частное лицо</span>
+</label>
+<label class="segbar__opt">
+<input type="radio" name="s-entity" value="company">
+<span>ИП или юрлицо</span>
+</label>
+</div>
+<div id="s-company" hidden>
+<div class="field">
+<label for="s-org">Название организации</label>
+<input id="s-org" type="text" autocomplete="organization"
+                 placeholder="ООО «Пример» или ИП Иванов И. И.">
+<p class="field__error">Напишите, как организация называется в документах.</p>
+</div>
+<div class="field">
+<label for="s-inn">ИНН</label>
+<input id="s-inn" type="text" inputmode="numeric" autocomplete="off"
+                 placeholder="10 цифр у юрлица, 12 у ИП">
+<p class="field__error">ИНН — это 10 цифр у юридического лица и 12 у ИП.</p>
+</div>
+<div class="field">
+<label for="s-ogrn">ОГРН или ОГРНИП</label>
+<input id="s-ogrn" type="text" inputmode="numeric" autocomplete="off"
+                 placeholder="13 цифр у юрлица, 15 у ИП">
+<p class="field__error">ОГРН — 13 цифр, ОГРНИП — 15.</p>
+</div>
+<div class="field">
+<label for="s-position">Должность подписанта <span class="field__opt">не обязательно</span></label>
+<input id="s-position" type="text" autocomplete="organization-title"
+                 placeholder="Директор">
+<p class="field__hint">Кто подпишет договор со стороны организации. У ИП можно не заполнять.</p>
+</div>
+</div>
+<div class="field">
+<label for="s-name">Как вас зовут</label>
+<input id="s-name" type="text" autocomplete="name" placeholder="Имя и фамилия" required>
+<p class="field__error">Напишите имя — юрист должен понимать, кто обратился.</p>
+<p class="field__hint" id="s-name-hint" hidden>Контактное лицо: с кем юрист будет говорить.</p>
+</div>
+<div class="field">
+<label for="s-phone">Телефон</label>
+<input id="s-phone" type="tel" inputmode="tel" autocomplete="tel"
+               placeholder="+7 (___) ___-__-__" required>
+<p class="field__error">Нужен телефон из 11 цифр — по нему вы и будете входить.</p>
+<p class="field__taken" id="s-phone-taken" hidden>
+          На этот номер кабинет уже заведён.
+          <button type="button" class="linklike" id="taken-to-login">Войти по нему</button>.
+        </p>
+<p class="field__hint">По этому номеру вы потом и войдёте — запоминать отдельный логин не нужно.</p>
+</div>
+<div class="field">
+<label for="s-msgr">Где удобнее писать</label>
+<div class="field__pair">
+<select id="s-msgr-kind" aria-label="Мессенджер">
+<option value="Telegram">Telegram</option>
+<option value="MAX">MAX</option>
+<option value="Телефон">Только телефон</option>
+</select>
+<input id="s-msgr" type="text" placeholder="@ник или номер" autocomplete="off">
+</div>
+<p class="field__hint">Не обязательно. Но так юрист ответит быстрее, чем звонком.</p>
+</div>
+<div class="field">
+<label for="s-mail">Почта <span class="field__opt">не обязательно</span></label>
+<input id="s-mail" type="email" autocomplete="email" placeholder="you@example.ru">
+<p class="field__error">В адресе опечатка — не хватает «@» или домена.</p>
+</div>
+<div class="field">
+<label for="s-pass">Пароль</label>
+<input id="s-pass" type="password" autocomplete="new-password" placeholder="Не короче 6 знаков" required>
+<p class="field__error">Пароль должен быть не короче шести знаков.</p>
+</div>
+<label class="remember">
+<input type="checkbox" id="s-remember" checked>
+<span>Запомнить меня<em>Не отмечайте на чужом компьютере — выход произойдёт сам, как только вы закроете вкладку.</em></span>
+</label>
+<div class="field">
+<label class="form__consent">
+<input type="checkbox" id="s-agree" required>
+<span>Согласен на обработку персональных данных в соответствии с
+            <a href="../legal/index.html">политикой конфиденциальности</a>.</span>
+</label>
+<p class="field__error">Без согласия мы не вправе завести кабинет.</p>
+</div>
+<button class="btn btn--primary btn--block" type="submit" id="s-submit">Зарегистрироваться</button>
+<p class="form__status" id="s-status" role="status" aria-live="polite"></p>
+</form>
+<p class="auth__foot contact-line" id="auth-foot">
+      Если юрист уже выдал вам логин — входите по нему, регистрироваться не нужно.<br>
+      Не получается войти? Позвоните <a href="tel:+79647330046">8&nbsp;(964)&nbsp;733-00-46</a>
+      или напишите в <a href="https://t.me/help_lawyer_help" target="_blank" rel="noopener">Telegram</a>.
+    </p>
+</div>
+</section>
+<header class="lk-top" id="lk-top" hidden>
+<a class="brand" href="../index.html" aria-label="На сайт">
+<svg class="brand__mark" viewBox="0 0 96 96" fill="none" aria-hidden="true"><path d="M48 9 79 19.5V45c0 18-12.5 31.5-31 42C29.5 76.5 17 63 17 45V19.5Z" stroke="url(#au)" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/><g stroke="url(#au)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M30 38h36"/><path d="M48 38v26"/><path d="M39 64h18"/><path d="M30 38v6M66 38v6"/><path d="M22 44q8 8.5 16 0M58 44q8 8.5 16 0"/></g><circle cx="48" cy="38" r="3.4" fill="url(#au)"/></svg>
+<span class="brand__text"><span class="brand__name">Стратегия Права</span></span>
+</a>
+<a class="btn btn--dim btn--sm lk-home" href="../index.html">
+<svg width="15" height="15" aria-hidden="true"><use href="#i-back"/></svg>
+<span class="btn__label">На главную</span>
+</a>
+<div class="lk-top__spacer"></div>
+<button class="lk-who" id="profile-btn" type="button" aria-haspopup="dialog">
+<span class="lk-who__id">
+<b class="lk-who__name" id="who-name">—</b>
+<span class="lk-who__role" id="who-role">доверитель</span>
+</span>
+<span class="lk-who__mono" id="who-mono" aria-hidden="true"></span>
+</button>
+</header>
+<div class="segmented" id="tabs" role="tablist" hidden>
+<button role="tab" aria-selected="true" data-pane="case">Дело</button>
+<button role="tab" aria-selected="false" data-pane="chat">Переписка</button>
+</div>
+<main class="app" id="app" hidden>
+<section class="pane" id="pane-case" role="tabpanel" aria-label="Дело">
+<div class="pane__head">
+<div>
+<h2 id="case-head">Ваше дело</h2>
+<p id="case-updated">—</p>
+</div>
+</div>
+<div class="pane__scroll" id="case-body">
+<div class="skeleton skeleton--card"></div>
+<div class="skeleton skeleton--line" style="width:40%"></div>
+<div class="skeleton skeleton--line" style="width:80%"></div>
+<div class="skeleton skeleton--line" style="width:65%"></div>
+</div>
+</section>
+<section class="pane" id="pane-chat" role="tabpanel" aria-label="Переписка">
+<div class="pane__head">
+<div>
+<h2>Переписка с юристом</h2>
+<p id="chat-sub">Отвечаем в рабочее время, срочное — по телефону</p>
+</div>
+</div>
+<div class="chat">
+<div class="chat__log" id="chat-log">
+<div class="skeleton skeleton--msg"></div>
+<div class="skeleton skeleton--msg r"></div>
+<div class="skeleton skeleton--msg"></div>
+</div>
+<form class="composer" id="composer">
+<input type="file" id="chat-file" hidden
+               accept=".pdf,.jpg,.jpeg,.png,.heic,.doc,.docx,.xls,.xlsx,.txt,image/*,application/pdf">
+<button type="button" class="clip" id="clip" aria-label="Прикрепить документ" title="Прикрепить документ">
+<svg width="20" height="20" aria-hidden="true"><use href="#i-clip"/></svg>
+</button>
+<label class="visually-hidden" for="msg">Сообщение юристу</label>
+<textarea id="msg" rows="1" placeholder="Напишите сообщение…" maxlength="4000"></textarea>
+<button class="send" type="submit" id="send" disabled aria-label="Отправить">
+<svg width="19" height="19" aria-hidden="true"><use href="#i-send"/></svg>
+</button>
+</form>
+</div>
+</section>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="../assets/js/vendor/supabase.js?v=98"></script>
+<script src="../assets/js/workspace.js?v=98" defer></script>
+<script src="../assets/js/cabinet.js?v=98" defer></script>
+</body>
+</html>

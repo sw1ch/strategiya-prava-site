@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0908">
+<title>Страница не найдена — Стратегия Права</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap">
+<link rel="stylesheet" href="/assets/css/app.css?v=98">
+<style>
+  /* Одна страница — один экран. Ради неё отдельный файл стилей не нужен. */
+  .nf { min-height: 100svh; display: grid; place-items: center; padding: 40px 20px; text-align: center; }
+  .nf__glow { position: fixed; inset: 0; pointer-events: none;
+    background: radial-gradient(60% 44% at 50% 34%, rgba(201,162,39,.16) 0%, transparent 70%); }
+  .nf__inner { position: relative; max-width: 54ch; }
+  .nf__code { font-family: var(--font-display); font-size: clamp(4rem, 3rem + 8vw, 9rem);
+    line-height: .9; color: transparent; -webkit-text-stroke: 1.5px var(--gold-dark); margin-bottom: 18px; }
+  .nf__links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 30px; }
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="nf__glow" aria-hidden="true"></div>
+<main class="nf">
+<div class="nf__inner">
+<p class="nf__code">404</p>
+<h1 class="section__title" style="font-size:clamp(1.6rem,1.2rem + 1.6vw,2.3rem)">Такой страницы нет</h1>
+<p class="section__lead" style="margin-inline:auto">
+      Возможно, ссылка устарела или в адресе опечатка. Если вы искали что-то
+      конкретное — просто позвоните, разберёмся быстрее, чем вы будете искать.
+    </p>
+<div class="nf__links">
+<a class="btn btn--primary" href="/index.html">На главную</a>
+<a class="btn btn--ghost" href="/index.html#prices">Цены</a>
+<a class="btn btn--ghost" href="/lk/index.html">Личный кабинет</a>
+<a class="btn btn--ghost" href="tel:+79647330046">8 (964) 733-00-46</a>
+</div>
+</div>
+</main>
+</body>
+</html>
